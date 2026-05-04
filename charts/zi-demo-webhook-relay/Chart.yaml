@@ -1,0 +1,6 @@
+apiVersion: v2
+name: zi-demo-webhook-relay
+description: ZoomInfo Webhook Relay Service - receives and forwards webhook events
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
