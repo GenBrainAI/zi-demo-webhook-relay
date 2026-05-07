@@ -7,7 +7,7 @@ image:
 
 service:
   type: ClusterIP
-  port: 8080
+  port: 8443
   targetPort: 8443
 
 resources:
@@ -21,14 +21,14 @@ resources:
 livenessProbe:
   httpGet:
     path: /health
-    port: 8080
+    port: 8443
   initialDelaySeconds: 5
   periodSeconds: 10
 
 readinessProbe:
   httpGet:
     path: /health
-    port: 8080
+    port: 8443
   initialDelaySeconds: 3
   periodSeconds: 5
 

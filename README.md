@@ -6,7 +6,7 @@ A lightweight webhook relay service built with FastAPI.
 
 ```bash
 pip install -r requirements.txt
-uvicorn src.main:app --host 0.0.0.0 --port 8080
+uvicorn src.main:app --host 0.0.0.0 --port 8443
 ```
 
 ## Endpoints
@@ -21,5 +21,5 @@ uvicorn src.main:app --host 0.0.0.0 --port 8080
 
 ```bash
 docker build -t zi-webhook-relay .
-docker run -p 8080:8080 zi-webhook-relay
+docker run -p 8443:8443 zi-webhook-relay
 ```
